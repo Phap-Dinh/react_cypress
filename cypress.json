@@ -1,0 +1,8 @@
+{
+    "baseUrl": "http://localhost:3000",
+    "experimentalStudio": true, 
+    "projectId": "iu9isw",
+    "env": {
+        "signin": "Sign In"
+    }
+}
