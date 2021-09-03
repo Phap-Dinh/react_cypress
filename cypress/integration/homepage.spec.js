@@ -19,7 +19,7 @@ describe("home page", () => {
         cy.findByText("phap").should("exist")
     })
 
-    it("render fail test", () => {
+    it("render a fail test", () => {
         cy.get("#myInput").type("thuy");
         cy.get("#myButton").click()
         cy.findByText("thui").should("exist")
