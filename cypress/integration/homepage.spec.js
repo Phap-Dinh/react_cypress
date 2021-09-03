@@ -2,7 +2,7 @@
 
 const SIGNIN = Cypress.env("signin")
 
-describe("renders the home page", () => {
+describe("home page", () => {
     beforeEach(() => {
         cy.visit("/")
     })
@@ -17,6 +17,12 @@ describe("renders the home page", () => {
         /* ==== End Cypress Studio ==== */
         cy.get("#myButton").click()
         cy.findByText("phap").should("exist")
+    })
+
+    it("render fail test", () => {
+        cy.get("#myInput").type("thuy");
+        cy.get("#myButton").click()
+        cy.findByText("thui").should("exist")
     })
 
     it("render link", () => {
