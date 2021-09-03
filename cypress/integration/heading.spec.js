@@ -12,6 +12,6 @@ describe("home page", () => {
     })
 
     it("doesn't find heading", () => {
-        cy.get('React and Cypress de').should("exist")
+        cy.get('React and Cypress dem').should("exist")
     })
 })
